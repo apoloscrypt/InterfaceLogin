@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <h3>Login</h3>
+        <input type="text" placeholder="Login" id="loginInput">
+        <br>
+        <input type="password" placeholder="Senha" id="senhaInput">
+        <br>
+        <input type="button" value="Entrar" onclick="verificarLogin()">
+    </form>
+
+    <script>   
+
+        function verificarLogin(){
+
+            var loginInput = document.getElementById('loginInput').value;
+            var senhaInput = document.getElementById('senhaInput').value;
+
+            if (loginInput == "admin" && senhaInput == "admin"){
+                alert('Login realizado com sucesso.');
+            }
+            else{
+                alert('Credenciais invalidas');
+            }
+
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>
